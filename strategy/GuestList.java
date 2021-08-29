@@ -10,6 +10,7 @@ public class GuestList {
     public GuestList(String title) {
         people = new ArrayList<String>();
         this.title = title;
+        searchBehavior = new LinearSearch();
     }
 
     public boolean add(String person) {
