@@ -6,7 +6,7 @@ public class LinearSearch implements SearchBehavior{
 
     @Override
     public boolean contains(ArrayList<String> data, String item) {
-        if (data.size() != 0) {
+        if (!data.isEmpty()) {
             for (String person : data) {
                 if (person.equalsIgnoreCase(item)) {
                     return true;

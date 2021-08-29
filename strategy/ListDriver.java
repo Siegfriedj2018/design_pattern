@@ -36,8 +36,8 @@ public class ListDriver {
         addGuest("Sara");
         addGuest("Kim");
         addGuest("Jamie");
-        // removeGuest("Amy");
-        // removeGuest("Ashley");
+        removeGuest("Amy");
+        removeGuest("Ashley");
 
         displayList();
     }
