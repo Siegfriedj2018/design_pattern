@@ -37,6 +37,6 @@ public class GuestList {
     }
 
     public void setSearchBehavior(SearchBehavior searchBehavior) {
-        this.searchBehavior 
+        this.searchBehavior = searchBehavior;
     }
 }
