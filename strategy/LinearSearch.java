@@ -6,7 +6,13 @@ public class LinearSearch implements SearchBehavior{
 
     @Override
     public boolean contains(ArrayList<String> data, String item) {
-        // TODO Auto-generated method stub
+        if (data.size() != 0) {
+            for (String person : data) {
+                if (person.equalsIgnoreCase(item)) {
+                    return true;
+                }
+            }
+        }
         return false;
     }
     

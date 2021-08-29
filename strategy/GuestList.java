@@ -14,10 +14,17 @@ public class GuestList {
     }
 
     public boolean add(String person) {
+        if (!searchBehavior.contains(people, person)) {
+            return people.add(person);
+        }
         return false;
     }
 
     public boolean remove(String person) {
+        if (searchBehavior.contains(people, person)) {
+            return people.remove(person);
+        }
+
         return false;
     }
 
@@ -30,6 +37,6 @@ public class GuestList {
     }
 
     public void setSearchBehavior(SearchBehavior searchBehavior) {
-        // left empty for now
+        this.searchBehavior 
     }
 }

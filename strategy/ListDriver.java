@@ -30,14 +30,14 @@ public class ListDriver {
         removeGuest("Kyle");
         removeGuest("Kevin");
 
-        BinarySearch bSearch = new BinarySearch();
-        gList.setSearchBehavior(bSearch);
+        // BinarySearch bSearch = new BinarySearch();
+        // gList.setSearchBehavior(bSearch);
 
-        addGuest("Sara");
-        addGuest("Kim");
-        addGuest("Jamie");
-        removeGuest("Amy");
-        removeGuest("Ashley");
+        // addGuest("Sara");
+        // addGuest("Kim");
+        // addGuest("Jamie");
+        // removeGuest("Amy");
+        // removeGuest("Ashley");
 
         displayList();
     }
