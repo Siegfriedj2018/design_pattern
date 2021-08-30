@@ -2,10 +2,20 @@ package strategy;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.lang.Math;
 
+/**
+ * Does a binary search for a name in a list.
+ * @author Justin Siegfried
+ */
 public class BinarySearch implements SearchBehavior {
 
+    /**
+     * An overridden method from the SearhBehavior interface that uses
+     * a binary search for a name in a list.
+     * @param data Arraylist of Strings that is going to be searched.
+     * @param item The item that is being searched for.
+     * @return true if item is found, false otherwise.
+     */
     @Override
     public boolean contains(ArrayList<String> data, String item) {
         if (!data.isEmpty()) {
