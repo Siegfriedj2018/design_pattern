@@ -5,6 +5,7 @@ import java.util.Collections;
 
 /**
  * Does a binary search for a name in a list.
+ * Binary Search reference: https://www.geeksforgeeks.org/java-program-to-perform-binary-search-on-arraylist/
  * @author Justin Siegfried
  */
 public class BinarySearch implements SearchBehavior {
