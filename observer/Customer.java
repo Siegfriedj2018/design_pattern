@@ -12,5 +12,17 @@ public class Customer implements Observer {
 
     }
 
+    @Override
+    public void update(Book book) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void display() {
+        // TODO Auto-generated method stub
+        
+    }
+
 
 }

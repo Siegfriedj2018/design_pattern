@@ -11,4 +11,16 @@ public class Store implements Observer {
     public Store(Subject subject) {
         bestSellers = new LinkedList<Book>();
     }
+
+    @Override
+    public void update(Book book) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public void display() {
+        // TODO Auto-generated method stub
+        
+    }
 }
