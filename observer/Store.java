@@ -1,7 +1,7 @@
 package observer;
 
-import java.util.Queue;
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class Store implements Observer {
     private Subject subject;
@@ -9,12 +9,17 @@ public class Store implements Observer {
     private Queue<Book> bestSellers;
 
     public Store(Subject subject) {
+        this.subject = subject;
+        this.subject.registerObserver(this);
         bestSellers = new LinkedList<Book>();
     }
 
     @Override
     public void update(Book book) {
-        // TODO Auto-generated method stub
+        if (bestSellers.size() <= 5) {
+            bestSellers.add(book);
+        } else {
+        }
         
     }
 
