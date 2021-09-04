@@ -16,16 +16,21 @@ public class Store implements Observer {
 
     @Override
     public void update(Book book) {
-        if (bestSellers.size() <= 5) {
+        if (bestSellers.size() < 5) {
             bestSellers.add(book);
         } else {
+            bestSellers.remove();
+            bestSellers.add(book);
         }
         
     }
 
     @Override
     public void display() {
-        // TODO Auto-generated method stub
+        System.out.println("Top 5 bestsellers:");
+        for (Book book : bestSellers) {
+            System.out.println(" - " + book);
+        }
         
     }
 }

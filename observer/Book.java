@@ -1,5 +1,8 @@
 package observer;
 
+/**
+ * The book class is 
+ */
 public class Book {
     private String title;
     private String authorFirstName;
