@@ -1,8 +1,8 @@
 package observer;
 
 /**
- * The Subject is a client that want to be notified by
- * the system to a new book.
+ * The Subject is how a user will be able to 
+ * register, be removed, and be notified of new updates to books.
  * @author Justin Siegfried
  */
 public interface Subject {
