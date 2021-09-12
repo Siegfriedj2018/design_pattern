@@ -9,17 +9,16 @@ public class PotatoeDriver {
     public void run() {
         Character potatoe = new PotatoeHead();
         Character eyePotatoe = new Eyes(potatoe);
-        eyePotatoe.draw();
-        // Character eyeNosePotatoe = new Nose(eyePotatoe);
-        // Character mouthEyeNosePotatoe = new Mouth(eyeNosePotatoe);
-        // Character hatMouthEyeNosePotatoe = new Hat(mouthEyeNosePotatoe);
-        // hatMouthEyeNosePotatoe.draw();
+        Character eyeNosePotatoe = new Nose(eyePotatoe);
+        Character mouthEyeNosePotatoe = new Mouth(eyeNosePotatoe);
+        Character hatMouthEyeNosePotatoe = new Hat(mouthEyeNosePotatoe);
+        hatMouthEyeNosePotatoe.draw();
 
-        // Character potatoe2 = new PotatoeHead();
-        // Character hatPotatoe2 = new Hat(potatoe2);
-        // Character eyeHatPotatoe2 = new Eyes(hatPotatoe2);
+        Character potatoe2 = new PotatoeHead();
+        Character hatPotatoe2 = new Hat(potatoe2);
+        Character eyeHatPotatoe2 = new Eyes(hatPotatoe2);
 
-        // eyeHatPotatoe2.draw();
+        eyeHatPotatoe2.draw();
     }
 
     public static void main(String[] args) {

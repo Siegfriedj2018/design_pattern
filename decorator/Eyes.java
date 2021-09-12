@@ -3,13 +3,12 @@ public class Eyes extends CharacterDecorator {
 
     public Eyes(Character character) {
         super(character);
-        //TODO Auto-generated constructor stub
+        customize();
     }
 
     @Override
     public void customize() {
-        // TODO Auto-generated method stub
-        
+        sections.set(3, " |  o  o  | ");
     }
     
 }

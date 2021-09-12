@@ -4,6 +4,7 @@ public abstract class CharacterDecorator extends Character {
 
     public CharacterDecorator(Character character) {
         this.character = character;
+        sections.addAll(this.character.sections);
     }
 
     public abstract void customize();
