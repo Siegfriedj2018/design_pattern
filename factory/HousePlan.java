@@ -43,18 +43,18 @@ public abstract class HousePlan {
         String result = "";
         result += "Square Feet: " + squareFeet + "\n";
         result += "Room: " + numRooms + "\n";
-        result += "Windows: " + numWindows + "\n";
+        result += "Windows: " + numWindows + "\n\n";
 
         result += "Materials:\n";
         for (String material : materials) {
             result += " - " + material + "\n";
         }
 
-        result += "Features:\n";
+        result += "\nFeatures:\n";
         for (String feature : features) {
             result += " - " + feature + "\n";
         }
 
-        return result + "\n";
+        return result;
     }
 }

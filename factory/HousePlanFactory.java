@@ -1,6 +1,6 @@
 public class HousePlanFactory {
 
-    public HousePlan createHousePlan(String type) {
+    public static HousePlan createHousePlan(String type) {
         if (type.equals("log cabin")) {
             return new LogCabinPlan();
         } else if (type.equals("Tiny Home")) {
