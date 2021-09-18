@@ -13,6 +13,8 @@ public abstract class HousePlan {
         this.squareFeet = squareFeet;
         materials = new ArrayList<String>();
         features = new ArrayList<String>();
+        setMaterials();
+        setFeatures();
     }
 
     protected abstract void setMaterials();
