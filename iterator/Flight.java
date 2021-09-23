@@ -11,7 +11,11 @@ public class Flight {
                   String to, 
                   int duration, 
                   int transfers) {
-        
+        this.flightNum = flightNum;
+        this.from = from;
+        this.to = to;
+        this.duration = duration;
+        this.transfers = transfers;
     }
 
     public String getFrom() {
@@ -31,6 +35,17 @@ public class Flight {
     }
 
     public String toString() {
-        return "";
+        String result = "";
+        int hour = 0;
+        int minutes = 0;
+        result = "FlightNumber: " + flightNum;
+        result += "\nFrom: " + from;
+        result += "\nTo: " + to;
+        result += "\nDuration ";
+        hour = duration / 60;
+        minutes = duration % 60;
+        result += hour + " hours " + minutes + " minutes";
+        result += "\n" + transfers + " Transfers";
+        return result;
     }
 }

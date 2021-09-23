@@ -1,13 +1,13 @@
+import java.util.Iterator;
 
 public class Airline {
     private String title;
-    private Flights[] flights;
-    private int size;
+    private Flight[] flights;
+    private int size = 0;
 
     public Airline(String title) {
         this.title = title;
-        size = 2;
-        flights = new Flights[size];
+        flights = new Flight[2];
     }
 
     public void addFlight(String flightNum, 
@@ -15,7 +15,11 @@ public class Airline {
                           String to, 
                           int duration, 
                           int transfers) {
-        
+        if (size > flights.length - 1) {
+            flights = growArray(flights);
+        }
+        flights[size] = new Flight(flightNum, from, to, duration, transfers);
+        size++;
     }
 
     public String getTitle() {
@@ -29,6 +33,7 @@ public class Airline {
     }
 
     public FlightIterator createIterator() {
-        return new FlightIterator(flights);
+        FlightIterator fIterator = new FlightIterator(flights);
+        return fIterator;
     }
 }
