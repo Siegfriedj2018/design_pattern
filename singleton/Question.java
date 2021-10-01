@@ -3,12 +3,7 @@ public class Question {
     private String[] answers;
     private int correctAnswer;
 
-    public Question(String question, 
-                    String ans1, 
-                    String ans2, 
-                    String ans3, 
-                    String ans4, 
-                    int correctAnswer) {
+    public Question(String question, String ans1, String ans2, String ans3, String ans4, int correctAnswer) {
         this.question = question;
         answers = new String[4];
         answers[0] = ans1;
@@ -20,10 +15,10 @@ public class Question {
 
     public String toString() {
         String result = question + "\n";
-        for (int i = 0; i < 4; i++) {
-            result += (i+1) + ". " + answers[i] + "\n";
+        for (int i = 0; i < 4; ++i) {
+            result += (i + 1) + ". " + answers[i] + "\n";
         }
-        result += "The correct answer is: " + getCorrectAnswer() + "\n";
+        
         return result;
     }
 
