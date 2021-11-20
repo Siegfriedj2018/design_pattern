@@ -1,8 +1,8 @@
-
+import java.util.Random;
 public class Hard implements State {
-    private ArithmeticGame game;
+    private ArithemeticGame game;
 
-    public Hard(ArithmeticGame game) {
+    public Hard(ArithemeticGame game) {
         this.game = game;
     }
 
@@ -26,7 +26,7 @@ public class Hard implements State {
     @Override
     public void levelDown() {
         System.out.println("You are struggling, let's go to medium mode.");
-        game.setState(game.getMediumState);
+        game.setState(game.getMediumState());
     }
 
     private int randomNum(int lower, int upper) {

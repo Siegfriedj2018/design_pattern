@@ -1,8 +1,8 @@
-
-public class Medium {
+import java.util.Random;
+public class Medium implements State {
     private ArithemeticGame game;
 
-    public Medium(ArithmeticGame game) {
+    public Medium(ArithemeticGame game) {
         this.game = game;
     }
     
