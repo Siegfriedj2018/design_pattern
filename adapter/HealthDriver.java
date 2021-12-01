@@ -36,16 +36,16 @@ public class HealthDriver {
         System.out.println(medRecord);
 
         HealthRecord record = new CarolinaHealthRecord("Bob", "White", makeDate(2008, 8, 10), "Male");
-        // MedicalRecord myRecord = new MedicalRecordAdapter(record);
-        // record.addHistory(makeDate(2008, 8, 12), true, "Entering the world wonderfully");
-        // record.addHistory(makeDate(2008, 9, 12), true, "1 Month Checkup, everything is strong.");
-        // record.addHistory(makeDate(2008, 11, 28), false, "Suffering from the croup, gave sterroids");
-        // record.addHistory(makeDate(2009, 2, 12), true, "6 Month Checkup, everything is strong.");
-        // myRecord.addVisit(makeDate(2009, 4, 19), true, "Allergies are causing a cold");
-        // myRecord.addVisit(makeDate(2009, 8, 9), true, "1 year, and growing strong");
-        // myRecord.addVisit(makeDate(2010, 8, 11), true, "2 year, and growing strong");
-        // myRecord.addVisit(makeDate(2011, 8, 10), true, "3 year, and growing strong");
-        // System.out.println(myRecord);
+        MedicalRecord myRecord = new MedicalRecordAdapter(record);
+        record.addHistory(makeDate(2008, 8, 12), true, "Entering the world wonderfully");
+        record.addHistory(makeDate(2008, 9, 12), true, "1 Month Checkup, everything is strong.");
+        record.addHistory(makeDate(2008, 11, 28), false, "Suffering from the croup, gave sterroids");
+        record.addHistory(makeDate(2009, 2, 12), true, "6 Month Checkup, everything is strong.");
+        myRecord.addVisit(makeDate(2009, 4, 19), true, "Allergies are causing a cold");
+        myRecord.addVisit(makeDate(2009, 8, 9), true, "1 year, and growing strong");
+        myRecord.addVisit(makeDate(2010, 8, 11), true, "2 year, and growing strong");
+        myRecord.addVisit(makeDate(2011, 8, 10), true, "3 year, and growing strong");
+        System.out.println(myRecord);
 
         System.out.println("Previous display prior to adapting the new system.");
         System.out.print(record);
